@@ -10,7 +10,7 @@ To run the application:
 
 ## Documentation
 
-**Not finished yet, documentation is empty right now**. 
+**Not finished yet, documentation is empty right now**.
 Swagger documentation for shipyard routes is available when the application is running on http://localhost:4200/doc
 
 ## Test
@@ -27,6 +27,6 @@ The application needs following env variables to run successfully:
 
 ### .env file example
 
-MONGO_URI=mongodb://localhost:27017,localhost:27017/  
-MONGO_DB=shipyard  
-MONGO_COLLECTION=ships
+> MONGO_URI=mongodb://localhost:27017,localhost:27017/  
+> MONGO_DB=shipyard  
+> MONGO_COLLECTION=ships
