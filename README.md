@@ -10,7 +10,7 @@ To run the application:
 
 ## Documentation
 
-**Not finished yet, documentation is empty right now**
+**Not finished yet, documentation is empty right now**. 
 Swagger documentation for shipyard routes is available when the application is running on http://localhost:4200/doc
 
 ## Test
