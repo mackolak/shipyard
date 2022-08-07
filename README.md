@@ -2,7 +2,11 @@
 
 This application is used to add new ships and getting list of all ships from/to shipyard
 
-To run the application run command **npm start**
+To run the application:
+
+- first the npm modules need to installed with command **npm ci**
+- Mongo database needs to be setup and details for connecting to it provided in [Environment variables](#environment-variables)
+- run command **npm start**
 
 ## Documentation
 
@@ -21,7 +25,7 @@ The application needs following env variables to run successfully:
 - MONGO_DB
 - MONGO_COLLECTION
 
-### .env example
+### .env file example
 
 MONGO_URI=mongodb://localhost:27017,localhost:27017/  
 MONGO_DB=shipyard  
