@@ -1,15 +1,17 @@
-const server = require('./app')({
-  logger: {
-    level: 'info',
-    transport: {
-      target: 'pino-pretty',
-    },
-  },
-});
+const server = require('./app');
 
-server.listen({ port: 4200 }, (err, address) => {
-  if (err) {
-    server.log.error(err);
+const start = async () => {
+  try {
+    const fastify = server();
+    await fastify.listen({ port: 4200 }, (err, address) => {
+      if (err) {
+        server.log.error(err);
+        process.exit(1);
+      }
+    });
+  } catch (err) {
+    console.error(err);
     process.exit(1);
   }
-});
+};
+start();
