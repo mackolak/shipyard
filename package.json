@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc --check-coverage --statements 90 mocha --exit",
-    "start": "node ./server.js",
-    "develop": "nodemon ./server.js"
+    "start": "node -r dotenv/config ./server.js",
+    "develop": "nodemon -r dotenv/config ./server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/swagger": "^7.4.1",
     "dotenv": "^16.0.1",
     "fastify": "^4.3.0",
     "mongodb": "4.8"
